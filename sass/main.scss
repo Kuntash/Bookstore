@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+$color-secondary: #02aab0bd;
+$color-primary: #00cdabc4;
+
+@mixin title-animation($anim-name) {
+  animation-name: $anim-name;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
 html {
   font-size: 62.5%;
 }
@@ -15,24 +23,28 @@ body {
 
 .heading {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4),
+  background-image: linear-gradient(
+      to right bottom,
+      $color-secondary,
+      $color-primary
+    ),
     url("../images/library.jfif");
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
   position: relative;
 }
 
-.logo-box {
+.heading-logo-box {
   position: absolute;
   top: 2rem;
   left: 2rem;
 }
-.logo:hover {
+.heading-logo:hover {
   transform: scale(1.5);
   transition: 1.5s;
 }
 
-.logo {
+.heading-logo {
   width: 10%;
 }
 
@@ -44,29 +56,25 @@ body {
   text-align: center;
 }
 
-.title-main {
+.heading-title-main {
   font-size: 6.4rem;
   font-weight: 900;
   letter-spacing: 0.5ch;
   color: #fff;
   margin-bottom: 2%;
-  animation-name: moveInleft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
   display: block;
+  @include title-animation(moveInleft);
 }
 
-.title-sub {
+.heading-title-sub {
   color: #fff;
   font-size: 2.8rem;
   font-weight: 400;
   letter-spacing: 0.5ch;
   text-transform: uppercase;
-  animation-name: moveInright;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
   display: block;
   margin-bottom: 6rem;
+  @include title-animation(moveInright);
 }
 .btn {
   cursor: pointer;
