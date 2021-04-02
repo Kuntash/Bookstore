@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #777;
+  padding: 3rem;
+}
+
+.heading {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4),
+    url("../images/library.jfif");
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.logo:hover {
+  transform: scale(1.5);
+  transition: 1.5s;
+}
+
+.logo {
+  width: 10%;
+}
+
+.heading-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title-main {
+  font-size: 6.4rem;
+  font-weight: 900;
+  letter-spacing: 0.5ch;
+  color: #fff;
+  margin-bottom: 2%;
+  animation-name: moveInleft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  display: block;
+}
+
+.title-sub {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 0.5ch;
+  text-transform: uppercase;
+  animation-name: moveInright;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  display: block;
+  margin-bottom: 6rem;
+}
+.btn {
+  cursor: pointer;
+  padding: 15px 40px;
+  font-size: 1.6rem;
+  display: inline-block;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+}
+.btn-white:hover {
+  transform: translateY(-0.3rem);
+}
+.btn-white:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+  background-color: #fff;
+  color: #777;
+  border-radius: 10rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: moveInbottom 0.4s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+.btn-white::after {
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn-white:hover::after {
+  transform: scaleX(1.2) scaleY(1.6);
+  opacity: 0;
+}
+@keyframes moveInbottom {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  70% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInright {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  70% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
