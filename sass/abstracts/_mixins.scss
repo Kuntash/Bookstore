@@ -1,0 +1,5 @@
+@mixin title-animation($anim-name) {
+  animation-name: $anim-name;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
