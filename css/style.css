@@ -42,8 +42,8 @@ body {
 .u-center-text {
   text-align: center; }
 
-.bottom-margin-8rem {
-  margin-bottom: 8rem; }
+.bottom-margin-big {
+  margin-bottom: 6rem; }
 
 .heading-title {
   position: absolute;
@@ -85,6 +85,17 @@ body {
   .heading-secondary:hover {
     transform: skewX(15deg) skewY(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem; }
+
+.paragraph {
+  font-size: 2rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 4rem; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -129,6 +140,25 @@ body {
       transform: scaleX(1.2) scaleY(1.6);
       opacity: 0; }
 
+.about-btn:link, .about-btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  color: #00cdabc4;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #00cdabc4;
+  padding: 0.7rem;
+  transition: 0.2s all; }
+
+.about-btn:hover {
+  color: #fff;
+  background-color: #00cdabc4;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.about-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
 .heading {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../images/library.jfif");
@@ -149,3 +179,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
+
+.section-about-subtext {
+  flex: 1;
+  margin: 10rem; }
+
+.section-about-subimage {
+  flex: 1;
+  margin: 10rem; }
