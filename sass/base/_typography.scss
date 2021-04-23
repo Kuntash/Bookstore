@@ -25,3 +25,18 @@
     @include title-animation(moveInright);
   }
 }
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-secondary, $color-primary);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.2s all;
+
+  &:hover {
+    transform: skewX(15deg) skewY(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}

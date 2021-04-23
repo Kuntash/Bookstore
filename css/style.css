@@ -39,6 +39,12 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
+.u-center-text {
+  text-align: center; }
+
+.bottom-margin-8rem {
+  margin-bottom: 8rem; }
+
 .heading-title {
   position: absolute;
   top: 40%;
@@ -66,6 +72,24 @@ body {
     animation-name: moveInright;
     animation-duration: 2s;
     animation-timing-function: ease-out; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #02aab0bd, #00cdabc4);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.2s all; }
+  .heading-secondary:hover {
+    transform: skewX(15deg) skewY(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 15rem 0;
+  margin-top: -5vh; }
 
 .btn {
   cursor: pointer;
@@ -109,7 +133,7 @@ body {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../images/library.jfif");
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90vh, 0 100%);
   position: relative; }
   .heading-logo-box {
     position: absolute;
@@ -120,3 +144,8 @@ body {
       transition: 1.5s; }
   .heading-logo {
     width: 10%; }
+
+.section-about-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
