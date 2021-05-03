@@ -3,8 +3,8 @@
   width: 100%;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-secondary, 0.8),
-      rgba($color-primary, 0.8)
+      $color-secondary,
+      $color-primary
     ),
     url("../../images/background-feature.jpg");
   position: relative;

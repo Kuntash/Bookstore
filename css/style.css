@@ -210,13 +210,13 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   display: inline-block;
   width: 18%;
-  height: 40%;
+  height: 45%;
   text-align: center;
   border-radius: 1rem;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
-  transition: transform  0.4s; }
+  transition: transform 0.4s; }
   .feature-box:hover {
-    transform: translateY(-2rem) scale(1.1);
+    transform: translateY(-2rem);
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4); }
   .feature-box:first-child {
@@ -238,6 +238,7 @@ body {
   -moz-perspective: 1500px;
   position: relative; }
   .card-side {
+    overflow: hidden;
     background: orangered;
     transition: all 0.8s ease-out;
     position: absolute;
@@ -246,13 +247,14 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    height: 50rem; }
+    height: 50rem;
+    border-radius: 0.3rem; }
     .card-side-front {
       background-color: #fff; }
     .card-side-back {
       transform: rotateY(180deg); }
       .card-side-back-1 {
-        background: linear-gradient(to right bottom, #434343, #000); }
+        background: linear-gradient(to right bottom, #96c93d, #00b09b); }
       .card-side-back-2 {
         background: linear-gradient(to right bottom, #ffc837, #ff8008); }
       .card-side-back-3 {
@@ -261,20 +263,79 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card-side-back {
     transform: rotateY(0); }
+  .card .card-title-img {
+    background-blend-mode: screen;
+    background-size: cover;
+    height: 23rem; }
+  .card .card-1 {
+    background-image: linear-gradient(to right bottom, #96c93d, #00b09b), url("../../images/george-r-r-martin.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+  .card .card-2 {
+    background-image: linear-gradient(to right bottom, #ffc837, #ffc837), url("../../images/j-k-rowling.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+  .card .card-3 {
+    background-image: linear-gradient(to right bottom, #66a6ff, #89f7fe), url("../../images/dan-brown.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+  .card .card-heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 18rem;
+    right: 2rem;
+    text-transform: uppercase; }
+  .card .card-heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card .card-heading-span-1 {
+      background: linear-gradient(to right bottom, rgba(150, 201, 61, 0.85), rgba(0, 176, 155, 0.85)); }
+    .card .card-heading-span-2 {
+      background: linear-gradient(to right bottom, rgba(255, 128, 8, 0.85), rgba(255, 200, 55, 0.85)); }
+    .card .card-heading-span-3 {
+      background: linear-gradient(to right bottom, rgba(102, 166, 255, 0.85), rgba(137, 247, 254, 0.85)); }
+  .card .card-details {
+    padding: 3rem; }
+    .card .card-details .card-details-list {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center; }
+      .card .card-details .card-details-list li {
+        font-size: 1.5rem;
+        padding: 1rem; }
+      .card .card-details .card-details-list li:not(:last-child) {
+        border-bottom: 0.1rem solid #eee; }
+  .card .card-side-price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center; }
+    .card .card-side-price-box-large {
+      padding: 3rem;
+      font-size: 7rem;
+      font-weight: 300; }
 
 .heading {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../../images/library.jfif");
+  background-blend-mode: screen;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90vh, 0 100%);
   position: relative; }
   .heading-logo-box {
     position: absolute;
     top: 2rem;
-    left: 2rem; }
+    left: 2rem;
+    transition: 0.3s;
+    cursor: pointer; }
     .heading-logo-box:hover {
-      transform: scale(1.5);
-      transition: 1.5s; }
+      transform: translateY(-0.3rem); }
   .heading-logo {
     width: 10%; }
 
@@ -299,7 +360,7 @@ body {
 .feature-container {
   height: 95vh;
   width: 100%;
-  background-image: linear-gradient(to right bottom, rgba(2, 170, 176, 0.8), rgba(0, 205, 171, 0.8)), url("../../images/background-feature.jpg");
+  background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../../images/background-feature.jpg");
   position: relative;
   display: flex;
   justify-content: space-between;

@@ -2,14 +2,14 @@
   background-color: rgba(#fff, 0.8);
   display: inline-block;
   width: 18%;
-  height: 40%;
+  height: 45%;
   text-align: center;
   border-radius: 1rem;
   box-shadow: 0 1.5rem 2rem rgba($color-black, 0.2);
-  transition: transform  0.4s;
+  transition: transform 0.4s;
 
   &:hover {
-    transform: translateY(-2rem) scale(1.1);
+    transform: translateY(-2rem);
     background-color: rgba(#fff, 0.9);
     box-shadow: 0 1.5rem 2rem rgba($color-black, 0.4);
   }

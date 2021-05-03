@@ -6,6 +6,7 @@
       $color-primary
     ),
     url("../../images/library.jfif");
+  background-blend-mode: screen;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90vh, 0 100%);
   position: relative;
@@ -14,10 +15,10 @@
     position: absolute;
     top: 2rem;
     left: 2rem;
-
+    transition: 0.3s;
+    cursor: pointer;
     &:hover {
-      transform: scale(1.5);
-      transition: 1.5s;
+      transform: translateY(-0.3rem);
     }
   }
   &-logo {
