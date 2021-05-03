@@ -1,0 +1,22 @@
+{
+  "name": "book-store",
+  "version": "1.0.0",
+  "description": "A book store to find all genres of book you need",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Kunga Tashi",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "book",
+    "showcase"
+  ],
+  "engines": {
+    "node": "14.15.4"
+  }
+}
