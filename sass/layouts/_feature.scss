@@ -1,0 +1,16 @@
+.feature-container {
+  height: 95vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url("../../images/background-feature.jpg");
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  clip-path: polygon(0 5vh, 50% 0, 100% 5vh, 100% 100%, 50% 90vh, 0 100%);
+}
