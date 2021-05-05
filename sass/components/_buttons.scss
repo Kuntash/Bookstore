@@ -48,6 +48,43 @@
       opacity: 0;
     }
   }
+  &-blue {
+    background: linear-gradient(to right, $color-secondary, $color-primary);
+    color: #fff;
+    border-radius: 10rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: moveInbottom 0.4s ease-out 0.75s;
+    animation-fill-mode: backwards;
+
+    &:hover {
+      transform: translateY(-0.3rem);
+    }
+
+    &:active {
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      background-color: $color-secondary;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+
+    &:hover::after {
+      transform: scaleX(1.2) scaleY(1.6);
+      opacity: 0;
+    }
+  }
 }
 
 .about-btn {
