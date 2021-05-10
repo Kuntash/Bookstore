@@ -52,6 +52,9 @@ body {
 .top-margin-big {
   margin-top: 8rem; }
 
+.top-margin-small {
+  margin-top: 6rem; }
+
 .heading-title {
   position: absolute;
   top: 40%;
@@ -349,6 +352,19 @@ body {
       font-size: 7rem;
       font-weight: 300; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; }
+
+.bg-video-content {
+  object-fit: cover;
+  opacity: 0.5; }
+
 .heading {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../../images/library.jfif");
@@ -398,10 +414,76 @@ body {
 
 .section-tour {
   background-color: #f7f7f7;
-  padding: 20rem 0 15rem 0;
+  padding: 20rem 0 10rem 0;
   margin-top: -5vh; }
 
 .tour-cards {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+
+.section-stories {
+  background-color: rgba(247, 247, 247, 0.1);
+  padding: 5rem 0;
+  position: relative; }
+
+.story-card {
+  padding: 6rem;
+  padding-left: 9rem;
+  width: 75%;
+  margin: 7rem auto;
+  height: 25rem;
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transform: skewX(-12deg); }
+  .story-card > * {
+    transform: skewX(12deg); }
+  .story-card .story-image {
+    background: linear-gradient(to right bottom, #ffc837, #ff8008);
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    position: relative; }
+    .story-card .story-image-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      transition: all 0.5s;
+      opacity: 0;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.5;
+      text-align: center; }
+    .story-card .story-image .reviewer {
+      width: 100%;
+      transform: translateY(1rem) scale(1.1);
+      transition: all 0.5s; }
+  .story-card:hover .story-image-caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .story-card:hover .reviewer {
+    filter: blur(3px) brightness(50%);
+    transform: translateY(1rem) scale(1); }
+  .story-card .story-1-review {
+    font-size: 2.5rem; }
+
+.section-booking {
+  padding: 15rem 20rem;
+  background: linear-gradient(to right bottom, #02aab0bd, #00cdabc4); }
+
+.booking {
+  background-image: linear-gradient(103deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../images/booking-background.jpg");
+  background-size: 100%;
+  border-radius: 0.3rem;
+  height: 50rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  .booking-form {
+    width: 50%;
+    padding: 6rem; }
