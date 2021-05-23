@@ -392,13 +392,13 @@ body {
     background-size: cover;
     height: 23rem; }
   .card .card-1 {
-    background-image: linear-gradient(to right bottom, #96c93d, #00b09b), url("../../images/george-r-r-martin.jpg");
+    background-image: linear-gradient(to right bottom, #96c93d, #00b09b), url("../images/george-r-r-martin.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
   .card .card-2 {
-    background-image: linear-gradient(to right bottom, #ffc837, #ffc837), url("../../images/j-k-rowling.jpg");
+    background-image: linear-gradient(to right bottom, #ffc837, #ffc837), url("../images/j-k-rowling.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
   .card .card-3 {
-    background-image: linear-gradient(to right bottom, #66a6ff, #89f7fe), url("../../images/dan-brown.jpg");
+    background-image: linear-gradient(to right bottom, #66a6ff, #89f7fe), url("../images/dan-brown.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
   .card .card-heading {
     font-size: 2.8rem;
@@ -606,7 +606,7 @@ body {
 
 .heading {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../../images/library.jfif");
+  background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../images/library.jfif");
   background-blend-mode: screen;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90vh, 0 100%);
@@ -655,7 +655,7 @@ body {
   padding-top: 20rem;
   padding-bottom: 20rem;
   width: 100%;
-  background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../../images/background-feature.jpg");
+  background-image: linear-gradient(to right bottom, #02aab0bd, #00cdabc4), url("../images/background-feature.jpg");
   background-blend-mode: screen;
   position: relative;
   display: flex;
@@ -768,7 +768,7 @@ body {
       padding: 3rem 3rem; } }
 
 .booking {
-  background-image: linear-gradient(103deg, rgba(247, 247, 247, 0.7) 0%, rgba(247, 247, 247, 0.7) 50%, transparent 50%), url("../../images/booking-background.jpg");
+  background-image: linear-gradient(103deg, rgba(247, 247, 247, 0.7) 0%, rgba(247, 247, 247, 0.7) 50%, transparent 50%), url("../images/booking-background.jpg");
   background-size: 100%;
   border-radius: 0.3rem;
   height: 50rem;
