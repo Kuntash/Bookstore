@@ -4,6 +4,7 @@
   perspective: 1500px;
   -moz-perspective: 1500px;
   position: relative;
+
   &-side {
     overflow: hidden;
     background: orangered;
@@ -165,4 +166,8 @@
       }
     }
   }
+}
+
+.card:not(:last-child) {
+  margin-bottom: 3rem;
 }

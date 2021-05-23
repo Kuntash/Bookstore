@@ -5,6 +5,14 @@
   cursor: pointer;
   z-index: 10;
   transition: all 0.5s;
+
+  @include response(-tabLand) {
+    width: 43%;
+  }
+
+  @include response(-tabPort) {
+    width: 15rem;
+  }
 }
 
 .book1 {
@@ -18,9 +26,21 @@
     outline: 1.5rem solid $color-primary;
     outline-offset: 1.5rem;
   }
+
+  @include response(-tabLand) {
+    top: 0;
+  }
+
+  @include response(-tabPort) {
+    left: 5rem;
+  }
+
+  @include response(-phone) {
+    left: 0;
+  }
 }
 .book2 {
-  left: 14rem;
+  right: 22rem;
   top: 1rem;
 
   &:hover {
@@ -30,9 +50,20 @@
     outline: 1.5rem solid $color-primary;
     outline-offset: 1.5rem;
   }
+
+  @include response(-tabLand) {
+    right: 15rem;
+    top: 2rem;
+  }
+
+  @include response(-tabPort) {
+    right: 50%;
+    transform: translateX(50%);
+    top: 1rem;
+  }
 }
 .book3 {
-  left: 28rem;
+  right: 10rem;
   top: 3rem;
 
   &:hover {
@@ -41,6 +72,20 @@
     transform: translateY(-0.5rem) scale(1.1);
     outline: 1.5rem solid $color-primary;
     outline-offset: 1.5rem;
+  }
+
+  @include response(-tabLand) {
+    right: 7rem;
+    top: 4rem;
+  }
+
+  @include response(-tabPort) {
+    top: 0;
+    right: 5rem;
+  }
+
+  @include response(-phone) {
+    right: 0;
   }
 }
 

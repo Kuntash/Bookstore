@@ -4,6 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
   &-main {
     font-size: 6.4rem;
     font-weight: 900;
@@ -12,8 +13,10 @@
     margin-bottom: 2%;
     display: block;
     @include title-animation(moveInleft);
+    @include response(-phone) {
+      font-size: 5rem;
+    }
   }
-
   &-sub {
     color: #fff;
     font-size: 2.8rem;
@@ -39,6 +42,13 @@
     transform: skewX(15deg) skewY(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
+
+  @include response(-tabLand) {
+    font-size: 3rem;
+  }
+  @include response(-tabPort) {
+    font-size: 2.3rem;
+  }
 }
 
 .heading-tertiary {
@@ -46,10 +56,16 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
+  @include response(-tabLand) {
+    font-size: 1.7rem;
+  }
 }
 .paragraph {
   font-size: 2rem;
   line-height: 1.5;
+  @include response(-tabLand) {
+    font-size: 1.7rem;
+  }
 
   &:not(:last-child) {
     margin-bottom: 4rem;

@@ -3,18 +3,31 @@
   padding: 15rem 0;
   margin-top: -5vh;
   margin-bottom: -15vh;
+  position: relative;
+
+  @include response(-tabLand) {
+    padding: 10rem 0;
+  }
+
+  @include response(-tabPort) {
+    padding-bottom: 34rem;
+  }
 }
 
 .section-about-sub {
   display: flex;
   justify-content: space-around;
+  @include response(-tabPort) {
+    flex-direction: column;
+  }
 }
 
 .section-about-subtext {
   flex: 1;
-  margin: 10rem;
+  margin: 6rem;
 }
 .section-about-subimage {
+  position: relative;
   flex: 1;
   margin: 5rem;
 }

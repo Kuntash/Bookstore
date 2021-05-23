@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div class="navigation">    
+        <input type="checkbox" class="navigation-checkbox" id = "checkbox-toggle"/>
+        <label for="checkbox-toggle" class="navigation-button">
+            <span class="navigation-icon">
+            </span>
+        </label>
+        <div class="navigation-background">&nbsp;</div>
+        <nav class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="" class="navigation-link">ABOUT</a></li>
+                <li class="navigation-item"><a href="" class="navigation-link">SALES</a></li>
+                <li class="navigation-item"><a href="" class="navigation-link">TOP SELLER</a></li>
+                <li class="navigation-item"><a href="" class="navigation-link">AUTHORS</a></li>
+                <li class="navigation-item"><a href="" class="navigation-link">AADFF</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class = "heading">
         <div class = "heading-logo-box">
             <img class = "heading-logo" src = "images/logo.png" alt = "mybooks">
@@ -77,7 +95,7 @@
                     EXCELLENT CONDITION
                 </h3>
                 <p class="top-margin-big paragraph">
-                    The books are packed with utmost care and love to prevent any damages during delivery
+                    Super fast delivery in perfect condition
                 </p>
             </div>
             <div class="feature-box">
@@ -90,7 +108,7 @@
                 </p>
             </div>
         </section>
-        <section class="section-tour">
+        <section class="section-tour" id = "section-tours">
             <div class="u-center-text">
                 <h1 class="heading-secondary bottom-margin-big">
                    Most Popular Books Tour
@@ -137,7 +155,7 @@
                                         &#8377; 6499
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-white">
+                                <a href="#popup" class="btn btn-white">
                                     Buy Now   &rarr;
                                 </a>
                             </div>
@@ -182,7 +200,7 @@
                                         &#8377; 8799
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-white">
+                                <a href="#popup" class="btn btn-white">
                                     Buy Now   &rarr;
                                 </a>
                             </div>
@@ -227,7 +245,7 @@
                                         &#8377; 5499
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-white">
+                                <a href="#popup" class="btn btn-white">
                                     Buy Now   &rarr;
                                 </a>
                             </div>
@@ -292,10 +310,101 @@
         <section class="section-booking">
             <div class="booking">
                 <div class="booking-form">
-                    
+                    <form action="#" class="form">
+                        <div class="bottom-margin-big">
+                            <h1 class="heading-secondary">
+                                Get Notified
+                            </h1>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class = "form-input" id="full-name" placeholder = "Full Name" required autocomplete="off"/>
+                            <label for="full-name" class = "form-label">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class = "form-input" id="email" placeholder = "Email" required autocomplete="off"/>
+                            <label for="email" class ="form-label">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-radio-group">
+                                <input type="radio" class="form-radio-input" id="form-radio-input1" name = "gender"/>
+                                <label for="form-radio-input1" class="form-radio-label">
+                                    <span class="form-radio-button"></span>
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-radio-group">
+                                <input type="radio" class="form-radio-input" id="form-radio-input" name = "gender"/>
+                                <label for="form-radio-input" class="form-radio-label">
+                                    <span class="form-radio-button"></span>
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group top-margin-small">
+                            <button type = "submit" class="btn btn-blue">REGISTER &rarr;</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-logo-box bottom-margin-big">
+            <img src="/images/logo.png" alt="" class="footer-logo">
+        </div>
+        <div class="footer-container">
+            <div class="footer-menu">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Company</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Careers</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <div class="navigational">
+                    <p class="footer-copyright">
+                        Lorem &copy; Kuntash  &trade; sit amet consectetur adipisicing elit. Obcaecati saepe architecto dolor culpa vero autem eaque iure rem placeat, accusantium repudiandae voluptatem aperiam cupiditate rerum nesciunt, beatae quos deleniti veritatis, dolorem corporis! Sed ab ipsa quod beatae laudantium dolores neque reprehenderit dicta harum magni. Enim unde distinctio illo laborum. Alias.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id = "popup">
+        <div class="popup-content">
+
+            <a href="#section-tours" class="popup-close">&times;</a>
+            <div class="popup-left">
+                <img src="./images/dan-brown.jpg" alt="" class = "popup-image">
+                <img src="./images/george-r-r-martin.jpg" alt="" class = "popup-image">
+            </div>
+            <div class="popup-right">
+                <h1 class="heading-secondary bottom-margin-medium">
+                    Start booking now
+                </h1>
+                <h3 class="heading-tertiary ">
+                    Dan Brown is a fabulous writer with a blend of history,science, fiction and realism
+                </h3>
+                <p class = "popup-para paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velnulla mollitia, iure est hic at. Architecto aperiam eadistinctio magnam. Velit omnis quisquam dignissimos optio,quibusdam nemo exercitationem mollitia minus dolores earum,modi neque deserunt aspernatur harum quia, eveniet beatae essevoluptates porro eaque accusantium. Ad corrupti magnam quinihil.
+                </p>
+                <button type = "submit" class="btn btn-blue">
+                    CHECK OUT
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

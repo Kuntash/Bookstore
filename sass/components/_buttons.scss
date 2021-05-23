@@ -6,6 +6,9 @@
   transition: all 0.2s;
   text-transform: uppercase;
 
+  //Change for the button element
+  border: none;
+
   &:link,
   &:visited {
     text-decoration: none;
