@@ -51,6 +51,7 @@
     rgba($color-secondary, 0.8),
     rgba($color-primary, 0.8)
   );
+  background-clip: text;
   -webkit-background-clip: text;
   display: inline-block;
 }

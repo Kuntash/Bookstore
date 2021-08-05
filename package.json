@@ -4,14 +4,16 @@
   "description": "A book store to find all genres of book you need",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass --watch --no-source-map sass/main.scss:css/style.css",
+    "autoprefixer": "postcss css/style.css --use autoprefixer -d build/",
+    "build:file": "npm run compile:sass && npm run autoprefixer"
   },
   "author": "Kunga Tashi",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^5.0.0"
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1"
   },
-  "devDependencies": {},
   "keywords": [
     "book",
     "showcase"
