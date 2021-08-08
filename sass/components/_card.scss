@@ -169,5 +169,7 @@
 }
 
 .card:not(:last-child) {
-  margin-bottom: 3rem;
+  @include response(-phone) {
+    margin-bottom: 3rem;
+  }
 }
